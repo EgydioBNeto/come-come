@@ -11,26 +11,26 @@
    <title>Come-Come</title>
 
     <script>
-function obterFrase (){
-var r_text = new Array ();
-r_text[0] = "100% não";
-r_text[1] = "Com certeza";
-r_text[2] = "Se vira ai";
-r_text[3] = "Sim";
-r_text[4] = "Lógico que não";
-r_text[5] = "100% sim";
-r_text[6] = "Não";
-r_text[7] = "Toma vergonha na cara e escolhe você";
-var i = Math.floor(8*Math.random())
-document.getElementById("sorte").innerHTML = "<p>" + r_text[i] + "</p>";
-}
-</script>
+      function obterFrase (){
+      var r_text = new Array ();
+      r_text[0] = "100% não";
+      r_text[1] = "Com certeza";
+      r_text[2] = "Se vira ai";
+      r_text[3] = "Sim";
+      r_text[4] = "Lógico que não";
+      r_text[5] = "100% sim";
+      r_text[6] = "Não";
+      r_text[7] = "Toma vergonha na cara e escolhe você";
+      var i = Math.floor(8*Math.random())
+      document.getElementById("sorte").innerHTML = "<p>" + r_text[i] + "</p>";
+      }
+  </script>
   </head>
-  <body class="container text-center bg-dark text-light">
-    <div class="border mt-5">
-    <p id="sorte" class="h1 mt-5 p-5">Indeciso(a) com algo?</p>
+  <body class="container text-center bg-dark col-md-3">
+    <div class="border mt-5 bg-light rounded">
+    <p id="sorte" class="h1 mt-5 p-5 text-dark">Indeciso(a) com algo?</p>
     <form>
-        <input type="button" value="Girar" onClick="obterFrase();" class="btn btn-primary mb-5"></input>
+        <input type="button" value="Girar" onClick="obterFrase();" class="btn btn-lg btn-dark mb-5"></input>
     </form>
 </div>
     <!-- Optional JavaScript; choose one of the two! -->
